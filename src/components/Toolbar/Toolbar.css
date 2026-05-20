@@ -1,0 +1,121 @@
+.toolbar {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.section + .section {
+  margin-top: 14px;
+}
+
+.title {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #6b7280;
+  margin: 0 0 8px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.addBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 8px 10px;
+  cursor: pointer;
+  font-size: 13px;
+  text-align: left;
+  font-family: inherit;
+  transition: background 0.1s ease;
+}
+
+.addBtn:hover {
+  background: #f3f4f6;
+}
+
+.swatch {
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  border: 1px solid #d1d5db;
+  flex-shrink: 0;
+}
+
+.sceneActions {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.undoRedo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+
+.actionBtn {
+  width: 100%;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  text-align: center;
+  font-family: inherit;
+  color: inherit;
+}
+
+.actionBtn:hover:not(:disabled) {
+  background: #f3f4f6;
+}
+
+.actionBtn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.dangerBtn {
+  width: 100%;
+  border: 1px solid #fecaca;
+  background: #fff;
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  text-align: center;
+  font-family: inherit;
+  color: #b91c1c;
+}
+
+.dangerBtn:hover:not(:disabled) {
+  background: #fef2f2;
+}
+
+.importLabel {
+  display: block;
+  width: 100%;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  text-align: center;
+  font-family: inherit;
+  color: inherit;
+  box-sizing: border-box;
+}
+
+.importLabel:hover {
+  background: #f3f4f6;
+}
