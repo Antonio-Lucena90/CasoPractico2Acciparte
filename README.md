@@ -78,6 +78,7 @@ Al exportar, los elementos se envuelven en un objeto con metadatos del lienzo:
 ### Decisiones de diseño
 
 - **Estado plano.** La escena es un array simple de elementos independientes. No hay jerarquías ni grupos, lo que mantiene el modelo fácil de serializar y de razonar.
+- **Hook personalizado `useScene`.** Toda la lógica que modifica los elementos (añadir, actualizar, eliminar) está encapsulada en un hook personalizado, manteniendo los componentes visuales simples y centrados únicamente en la presentación.
 - **`type` y `category` separados.** `type` identifica el elemento concreto y `category` lo agrupa en familias lógicas. Así la barra lateral se organiza automáticamente sin lógica extra.
 - **Posición centrada.** `x` e `y` representan el centro geométrico del elemento. Esto simplifica la rotación: girar un elemento no desplaza su posición.
 - **Catálogo declarativo.** Todos los tipos de elementos y sus valores por defecto viven en `src/models/elementCatalog.js`. Añadir un nuevo tipo solo requiere añadir una entrada a ese objeto.
