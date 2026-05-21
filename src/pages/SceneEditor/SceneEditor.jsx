@@ -4,7 +4,7 @@ import { Stage, Layer } from 'react-konva';
 import './SceneEditor.css';
 import Toolbar from '../../components/Toolbar/Toolbar';
 import PropertiesPanel from '../../components/PropertiesPanel/PropertiesPanel';
-import SceneElement from '../../components/SceneElement';
+import SceneElement from '../../components/SceneElement/SceneElement';
 import { useScene } from '../../hooks/useScene';
 
 const STAGE_WIDTH = 900;
